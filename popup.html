@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>每日状态记录</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="app-header">
+        <div class="date-line">
+          <button type="button" id="prev-day" class="nav-button">prev</button>
+          <button type="button" id="today-button" class="nav-button">今天</button>
+          <span id="today-date">--</span>
+          <div class="header-actions">
+            <button type="button" id="export-csv">导出 CSV</button>
+            <button type="button" id="export-json">导出 JSON</button>
+          </div>
+        </div>
+      </header>
+
+      <section class="ratings">
+        <div class="rating-row" data-key="pre_sleep_calmness">
+          <span class="label">入睡前身心平静程度</span>
+          <div class="stars" role="radiogroup" aria-label="入睡前身心平静程度评分"></div>
+        </div>
+        <div class="rating-row" data-key="sleep_recovery">
+          <span class="label">夜醒后再次入睡能力</span>
+          <div class="stars" role="radiogroup" aria-label="夜醒后再次入睡能力评分"></div>
+        </div>
+        <div class="rating-row" data-key="wake_up_state">
+          <span class="label">起床时精神与能量</span>
+          <div class="stars" role="radiogroup" aria-label="起床时精神与能量评分"></div>
+        </div>
+        <div class="rating-row" data-key="exercise_quality">
+          <span class="label">当天运动带来的感受</span>
+          <div class="stars" role="radiogroup" aria-label="当天运动带来的感受评分"></div>
+        </div>
+        <div class="rating-row" data-key="deep_work">
+          <span class="label">专注投入工作的程度</span>
+          <div class="stars" role="radiogroup" aria-label="专注投入工作的程度评分"></div>
+        </div>
+        <div class="rating-row" data-key="task_closure">
+          <span class="label">事务是否处理收口</span>
+          <div class="stars" role="radiogroup" aria-label="事务是否处理收口评分"></div>
+        </div>
+        <div class="rating-row" data-key="stress_manageability">
+          <span class="label">压力是否在掌控中</span>
+          <div class="stars" role="radiogroup" aria-label="压力是否在掌控中评分"></div>
+        </div>
+        <div class="rating-row" data-key="social_interaction">
+          <span class="label">人际往来带来的感受</span>
+          <div class="stars" role="radiogroup" aria-label="人际往来带来的感受评分"></div>
+        </div>
+        <div class="rating-row" data-key="presence">
+          <span class="label">对当下的觉察程度</span>
+          <div class="stars" role="radiogroup" aria-label="对当下的觉察程度评分"></div>
+        </div>
+        <div class="rating-row" data-key="deep_experience">
+          <span class="label">是否有沉浸或意义感</span>
+          <div class="stars" role="radiogroup" aria-label="是否有沉浸或意义感评分"></div>
+        </div>
+      </section>
+
+      <section class="memo">
+        <textarea id="memo" rows="15" placeholder="记录今日要点..."></textarea>
+      </section>
+
+      <p class="status" id="status-message" aria-live="polite"></p>
+    </main>
+
+    <script src="storage.js"></script>
+    <script src="csv.js"></script>
+    <script src="backup.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+| 中文维度   | 英文列名                   | 中文说明 |
+| ------ | ---------------------- | ---------- |
+| 睡前平静度  | `pre_sleep_calmness`   | 入睡前身心平静程度  |
+| 重新入睡能力 | `sleep_recovery`       | 夜醒后再次入睡能力  |
+| 起床时状态  | `wake_up_state`        | 起床时精神与能量   |
+| 运动质量   | `exercise_quality`     | 当天运动带来的感受  |
+| 深度工作   | `deep_work`            | 专注投入工作的程度  |
+| 事务清偿感  | `task_closure`         | 事务是否处理收口   |
+| 压力可控度  | `stress_manageability` | 压力是否在掌控中   |
+| 人际互动质量 | `social_interaction`   | 人际往来带来的感受  |
+| 在场感    | `presence`             | 对当下的觉察程度   |
+| 深度体验   | `deep_experience`      | 是否有沉浸或意义感  |

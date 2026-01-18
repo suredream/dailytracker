@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Daily State Tracker",
+  "description": "本地优先的每日状态记录器（中文界面）",
+  "version": "0.1.0",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["storage"]
+}
